@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Big Brothers and Sisters</title>
+    <style>
+        body
+        {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Survey</h1>
+
+    <form action="" method="get" class="form-example">
+        <div class="form-example" id="family-safety">
+            <div id="fam-threshold-question">
+                <label for="fam-threshold">On a scale of 1-10, how would you rate your relationship with your family/caretaker?</label>
+                <input type="number" min="1" max="10" name="fam-threshold" id="fam-threshold" required>
+            </div><br>
+            <div id="fam-sub-1">
+                <label for="fam-field-1">On a scale of 1-10, how good of a role model do you consider your parents/caretaker to be?</label>
+                <input type="number" min="1" max="10" name="fam-field-1" id="fam-field-1" required>
+            </div><br>
+            <div id="fam-sub-2">
+                <label for="fam-field-2">Do you consider your parents to be trusted adults?</label>
+                <select name="fam-field-2" id="fam-field-2">
+                    <option disabled selected>Select an option</option>
+                    <option value="std-2">Strongly disagree</option>
+                    <option value="sld-2">Slightly disagree</option>
+                    <option value="ns-2">Not sure</option>
+                    <option value="sla-2">Slightly agree</option>
+                    <option value="sta-2">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="fam-sub-3">
+                <label for="fam-field-3">Would you say that your parents are easily approachable for most issues you may or have experienced?</label>
+                <select name="fam-field-3" id="fam-field-3">
+                    <option disabled selected>Select an option</option>
+                    <option value="std-3">Strongly disagree</option>
+                    <option value="sld-3">Slightly disagree</option>
+                    <option value="ns-3">Not sure</option>
+                    <option value="sla-3">Slightly agree</option>
+                    <option value="sta-3">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="fam-sub-4">
+                <label for="fam-field-4">Is there anything you disapprove of that your parents partake in?</label>
+                <input type="text" name="fam-field-4" id="fam-field-4" required>
+            </div><br>
+            <div id="fam-sub-5">
+                <label for="fam-field-5">Have you ever had to worry about receiving your next meal or not?</label>
+                <select name="fam-field-5" id="fam-field-5">
+                    <option disabled selected>Select an option</option>
+                    <option value="std-5">Strongly disagree</option>
+                    <option value="sld-5">Slightly disagree</option>
+                    <option value="sla-5">Slightly agree</option>
+                    <option value="sta-5">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="fam-sub-6">
+                <label for="fam-field-6">How often do you eat outside home or at a restaurant?</label>
+                <select name="fam-field-6" id="fam-field-6">
+                    <option disabled selected>Select an option</option>
+                    <option value="n-6">Never</option>
+                    <option value="r-6">Rarely</option>
+                    <option value="nto-6">Not too often</option>
+                    <option value="so-6">Somewhat often</option>
+                    <option value="vo-6">Very often</option>
+                </select>
+            </div><br>
+            <div id="fam-sub-7">
+                <label for="fam-field-7">Which family member in your household usually cooks (if applicable)?</label>
+                <select name="fam-field-7" id="fam-field-7">
+                    <option disabled selected>Select an option</option>
+                    <option value="m-6">Mother</option>
+                    <option value="f-6">Father</option>
+                    <option value="s-6">Sibling</option>
+                    <option value="r-6">Relative</option>
+                    <option value="ff-6">Family friend</option>
+                    <option value="o-6">Other</option>
+                </select>
+            </div><br>
+            <div id="fam-sub-8">
+                <label for="fam-field-8">Have you ever experienced food poisoning?</label>
+                <select name="fam-field-8" id="fam-field-8">
+                    <option disabled selected>Select an option</option>
+                    <option value="y-8">Yes</option>
+                    <option value="n-8">No</option>
+                </select>
+            </div><br>
+            <div id="fam-sub-9">
+                <label for="fam-field-9">Are there ever times where you feel unsafe at home?</label>
+                <select name="fam-field-9" id="fam-field-9">
+                    <option disabled selected>Select an option</option>
+                    <option value="n-9">Never</option>
+                    <option value="r-9">Rarely</option>
+                    <option value="ns-9">Not sure</option>
+                    <option value="s-9">Sometimes</option>
+                    <option value="att-9">All the time</option>
+                </select>
+            </div><br>
+            <div id="fam-sub-10">
+                <label for="fam-field-10">Do you ever feel threatened or insecure around family members?</label>
+                <select name="fam-field-10" id="fam-field-10">
+                    <option disabled selected>Select an option</option>
+                    <option value="n-10">Never</option>
+                    <option value="r-10">Rarely</option>
+                    <option value="ns-10">Not sure</option>
+                    <option value="s-10">Sometimes</option>
+                    <option value="att-10">All the time</option>
+                </select>
+            </div><br>
+            <div id="fam-sub-11">
+                <label for="fam-field-11">Have you ever considered contacting local authorities or running away?</label>
+                <select name="fam-field-11" id="fam-field-11">
+                    <option disabled selected>Select an option</option>
+                    <option value="n-11">Never</option>
+                    <option value="r-11">Rarely</option>
+                    <option value="ns-11">Not sure</option>
+                    <option value="s-11">Sometimes</option>
+                    <option value="att-11">All the time</option>
+                </select>
+            </div><br>
+            <div id="fam-sub-12">
+                <label for="fam-field-12">Have any members of your household been a victim of domestic abuse (including you)?</label>
+                <select name="fam-field-12" id="fam-field-12">
+                    <option disabled selected>Select an option</option>
+                    <option value="n-12">Never</option>
+                    <option value="oot-12">Once or twice</option>
+                    <option value="ns-12">Not sure</option>
+                    <option value="st-12">Several times</option>
+                    <option value="mt-12">Many times</option>
+                </select>
+            </div><br>
+        </div>
+
+
+        <div class="form-example" id="communal-safety">
+            <div id="com-threshold-question">
+                <label for="com-threshold">On a scale of 1-10, how safe do you feel in your community?</label>
+                <input type="number" min="1" max="10" name="com-threshold" id="com-threshold" required>
+            </div><br>
+            <div id="com-sub-1">
+                <label for="com-field-1">Can you go outside while feeling safe at most times?</label>
+                <select name="com-field-1" id="com-field-1">
+                    <option value="r-1">Rarely</option>
+                    <option value="nto-1">Not too often</option>
+                    <option value="so-1">Somewhat often</option>
+                    <option value="vo-1">Very often</option>
+                </select>
+            </div><br>
+            <div id="com-sub-2">
+                <label for="com-field-2">How do you feel in areas of your community where there is poor street lighting?</label>
+                <select name="com-field-2" id="com-field-2">
+                    <option value="ns-2">Never safe</option>
+                    <option value="rs-2">Rarely safe</option>
+                    <option value="ss-2">Somewhat safe</option>
+                    <option value="vs-2">Very safe</option>
+                </select>
+            </div><br>
+            <div id="com-sub-3">
+                <label for="com-field-3">How do you feel in areas of your community you don’t know well?</label>
+                <select name="com-field-3" id="com-field-3">
+                    <option value="ns-3">Never safe</option>
+                    <option value="rs-3">Rarely safe</option>
+                    <option value="ss-3">Somewhat safe</option>
+                    <option value="vs-3">Very safe</option>
+                </select>
+            </div><br>
+            <div id="com-sub-4">
+                <label for="com-field-4">How do you feel when traveling through public transportation (buses, trains, taxis, Ubers, etc)</label>
+                <select name="com-field-4" id="com-field-4">
+                    <option value="ns-4">Never safe</option>
+                    <option value="rs-4">Rarely safe</option>
+                    <option value="ss-4">Somewhat safe</option>
+                    <option value="vs-4">Very safe</option>
+                </select>
+            </div><br>
+            <div id="com-sub-5">
+                <label for="com-field-5">How do you feel in local community parks?</label>
+                <select name="com-field-5" id="com-field-5">
+                    <option value="ns-5">Never safe</option>
+                    <option value="rs-5">Rarely safe</option>
+                    <option value="ss-5">Somewhat safe</option>
+                    <option value="vs-5">Very safe</option>
+                </select>
+            </div><br>
+            <div id="com-sub-6">
+                <label for="com-field-6">Is there any area in your community where you feel unsafe? Please list them if so.</label>
+                <input type="text" name="com-field-6" id="com-field-6" required>
+            </div><br>
+            <div id="com-sub-7">
+                <label for="com-field-7">Is there anything that would make you feel safer in the community? Please share if so.</label>
+                <input type="text" name="com-field-7" id="com-field-7" required>
+            </div><br>
+
+
+            <div class="form-example" id="education">
+            <div id="edu-1">
+                <label for="edu">What grade are you in?</label>
+                <input type="number" min="1" max="12" name="edu" id="edu" required>
+            </div><br>
+            <div id="edu-threshold-question">
+                <label for="edu-threshold">On a scale of 1-10, how would you rate your education experience</label>
+                <input type="number" min="1" max="10" name="edu-threshold" id="edu-threshold" required>
+            </div><br>
+            <div id="edu-sub-1">
+                <label for="edu-field-1">Do you have any special learning needs? Please list if there are any.</label>
+                <input type="text" name="edu-field-1" id="edu-field-1" required>
+            </div><br>
+            <div id="edu-sub-2">
+                <label for="edu-field-2">Are you getting equal learning opportunities as other students?</label>
+                <select name="edu-field-2" id="edu-field-2">
+                    <option value="std-2">Strongly disagree</option>
+                    <option value="sld-2">Slightly disagree</option>
+                    <option value="ns-2">Not sure</option>
+                    <option value="sla-2">Slightly agree</option>
+                    <option value="sta-2">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="edu-sub-3">
+                <label for="edu-field-3">Are there resources for free tutoring at school?</label>
+                <select name="edu-field-3" id="edu-field-3">
+                    <option value="std-3">Strongly disagree</option>
+                    <option value="sld-3">Slightly disagree</option>
+                    <option value="ns-3">Not sure</option>
+                    <option value="sla-3">Slightly agree</option>
+                    <option value="sta-3">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="edu-sub-4">
+                <label for="edu-field-4">Does your teacher take extra steps to help you learn?</label>
+                <select name="edu-field-4" id="edu-field-4">
+                    <option value="std-4">Strongly disagree</option>
+                    <option value="sld-4">Slightly disagree</option>
+                    <option value="ns-4">Not sure</option>
+                    <option value="sla-4">Slightly agree</option>
+                    <option value="sta-4">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="edu-sub-5">
+                <label for="edu-field-5">Do you have access to resources (Internet, textbooks, school supplies, libraries, etc)?</label>
+                <select name="edu-field-5" id="edu-field-5">
+                    <option value="y-5">Yes</option>
+                    <option value="s-5">Some, but not all</option>
+                    <option value="n-5">No</option>
+                </select>
+            </div><br>
+            <div id="edu-sub-6">
+                <label for="edu-field-6">Is your first language English?</label>
+                <select name="edu-field-6" id="edu-field-6">
+                    <option value="y-6">Yes</option>
+                    <option value="n-6">No</option>
+                </select>
+            </div><br>
+            <div id="edu-sub-7">
+                <label for="edu-field-7">Are there any language barriers while learning?</label>
+                <select name="edu-field-7" id="edu-field-7">
+                    <option value="y-7">Yes</option>
+                    <option value="n-7">No</option>
+                </select>
+            </div><br>
+            <div id="edu-sub-8">
+                <label for="edu-field-8">Do you enjoy learning?</label>
+                <select name="edu-field-8" id="edu-field-8">
+                    <option value="std-8">Strongly disagree</option>
+                    <option value="sld-8">Slightly disagree</option>
+                    <option value="ns-8">Not sure</option>
+                    <option value="sla-8">Slightly agree</option>
+                    <option value="sta-8">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="edu-sub-9">
+                <label for="edu-field-9">What’s your favorite subject at school?</label>
+                <select name="edu-field-9" id="edu-field-9">
+                    <option value="m-9">Math</option>
+                    <option value="e-9">English</option>
+                    <option value="s-9">Science</option>
+                    <option value="ss-9">Social Studies</option>
+                    <option value="a-9">Art</option>
+                    <option value="wl-9">World Languages</option>
+                </select>
+            </div><br>
+            <div id="edu-sub-10">
+                <label for="edu-field-10">How’s the overall environment of school?</label>
+                <select name="edu-field-10" id="edu-field-10">
+                    <option value="rf-10">Rarely fun</option>
+                    <option value="ntf-10">Not too fun</option>
+                    <option value="sf-10">Somewhat fun</option>
+                    <option value="vf-10">Very fun</option>
+                </select>
+            </div><br>
+            <div id="edu-sub-11">
+                <label for="edu-field-11">Are teachers excited about teaching you?</label>
+                <select name="edu-field-11" id="edu-field-11">
+                    <option value="std-11">Strongly disagree</option>
+                    <option value="sld-11">Slightly disagree</option>
+                    <option value="ns-11">Not sure</option>
+                    <option value="sla-11">Slightly agree</option>
+                    <option value="sta-11">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="edu-sub-12">
+                <label for="edu-field-12">Are there fun activities at school (projects, recess, gym, group homework)?</label>
+                <select name="edu-field-12" id="edu-field-12">
+                    <option value="std-12">Strongly disagree</option>
+                    <option value="sld-12">Slightly disagree</option>
+                    <option value="ns-12">Not sure</option>
+                    <option value="sla-12">Slightly agree</option>
+                    <option value="sta-12">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="edu-sub-13">
+                <label for="edu-field-13">Do your parents participate in your learning?</label>
+                <select name="edu-field-13" id="edu-field-13">
+                    <option value="std-13">Strongly disagree</option>
+                    <option value="sld-13">Slightly disagree</option>
+                    <option value="ns-13">Not sure</option>
+                    <option value="sla-13">Slightly agree</option>
+                    <option value="sta-13">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="edu-sub-14">
+                <label for="edu-field-14">Is school a priority at home?</label>
+                <select name="edu-field-14" id="edu-field-14">
+                    <option value="std-14">Strongly disagree</option>
+                    <option value="sld-14">Slightly disagree</option>
+                    <option value="ns-14">Not sure</option>
+                    <option value="sla-14">Slightly agree</option>
+                    <option value="sta-14">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="edu-sub-15">
+                <label for="edu-field-15">Do your parents support your homework needs?</label>
+                <select name="edu-field-15" id="edu-field-15">
+                    <option value="std-15">Strongly disagree</option>
+                    <option value="sld-15">Slightly disagree</option>
+                    <option value="ns-15">Not sure</option>
+                    <option value="sla-15">Slightly agree</option>
+                    <option value="sta-15">Strongly agree</option>
+                </select>
+            </div><br>
+
+
+           <div class="form-example" id="food">
+            <div id="food-threshold-question">
+                <label for="food-threshold">On a scale of 1-10, how do you feel about your food intake?</label>
+                <input type="number" min="1" max="10" name="food-threshold" id="food-threshold" required>
+            </div><br>
+            <div id="food-sub-1">
+                <label for="food-field-1">Do you get three meals a day?</label>
+                <select name="food-field-1" id="food-field-1">
+                    <option value="y-1">Yes</option>
+                    <option value="n-1">No</option>
+                </select>
+            </div><br>
+            <div id="food-sub-2">
+                <label for="food-field-2">Do you get a sufficient breakfast?</label>
+                <select name="food-field-2" id="food-field-2">
+                    <option value="std-2">Strongly disagree</option>
+                    <option value="sld-2">Slightly disagree</option>
+                    <option value="ns-2">Not sure</option>
+                    <option value="sla-2">Slightly agree</option>
+                    <option value="sta-2">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="food-sub-3">
+                <label for="food-field-3">Do you get a sufficient lunch?</label>
+                <select name="food-field-3" id="food-field-3">
+                    <option value="std-3">Strongly disagree</option>
+                    <option value="sld-3">Slightly disagree</option>
+                    <option value="ns-3">Not sure</option>
+                    <option value="sla-3">Slightly agree</option>
+                    <option value="sta-3">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="food-sub-4">
+                <label for="food-field-4">Do you get a sufficient dinner?</label>
+                <select name="food-field-4" id="food-field-4">
+                    <option value="std-4">Strongly disagree</option>
+                    <option value="sld-4">Slightly disagree</option>
+                    <option value="ns-4">Not sure</option>
+                    <option value="sla-4">Slightly agree</option>
+                    <option value="sta-4">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="food-sub-5">
+                <label for="food-field-5">Is there food available (snacks, meals, etc) when you’re hungry?</label>
+                <select name="food-field-5" id="food-field-5">
+                    <option value="std-5">Strongly disagree</option>
+                    <option value="sld-5">Slightly disagree</option>
+                    <option value="ns-5">Not sure</option>
+                    <option value="sla-5">Slightly agree</option>
+                    <option value="sta-5">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="food-sub-6">
+                <label for="food-field-6">Do you get enough nutrients?</label>
+                <select name="food-field-6" id="food-field-6">
+                    <option value="std-6">Strongly disagree</option>
+                    <option value="sld-6">Slightly disagree</option>
+                    <option value="ns-6">Not sure</option>
+                    <option value="sla-6">Slightly agree</option>
+                    <option value="sta-6">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="food-sub-7">
+                <label for="food-field-7">Do you get 3-5 servings of veggies?</label>
+                <select name="food-field-7" id="food-field-7">
+                    <option value="std-7">Strongly disagree</option>
+                    <option value="sld-7">Slightly disagree</option>
+                    <option value="ns-7">Not sure</option>
+                    <option value="sla-7">Slightly agree</option>
+                    <option value="sta-7">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="food-sub-8">
+                <label for="food-field-8">Do you get 2-3 servings of dairy (milk, yogurt, cheese, etc)?</label>
+                <select name="food-field-8" id="food-field-8">
+                    <option value="std-8">Strongly disagree</option>
+                    <option value="sld-8">Slightly disagree</option>
+                    <option value="ns-8">Not sure</option>
+                    <option value="sla-8">Slightly agree</option>
+                    <option value="sta-8">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="food-sub-9">
+                <label for="food-field-9">Do you get 2-3 servings of protein (meat, chicken, eggs, fish, beans)?</label>
+                <select name="food-field-9" id="food-field-9">
+                    <option value="std-9">Strongly disagree</option>
+                    <option value="sld-9">Slightly disagree</option>
+                    <option value="ns-9">Not sure</option>
+                    <option value="sla-9">Slightly agree</option>
+                    <option value="sta-9">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="food-sub-10">
+                <label for="food-field-10">Do you get 2-4 servings of fruits?</label>
+                <select name="food-field-10" id="food-field-10">
+                    <option value="std-10">Strongly disagree</option>
+                    <option value="sld-10">Slightly disagree</option>
+                    <option value="ns-10">Not sure</option>
+                    <option value="sla-10">Slightly agree</option>
+                    <option value="sta-10">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="food-sub-11">
+                <label for="food-field-11">Do you get 6-11 servings of carbs (bread, rice, cereal, pasta)?</label>
+                <select name="food-field-11" id="food-field-11">
+                    <option value="std-11">Strongly disagree</option>
+                    <option value="sld-11">Slightly disagree</option>
+                    <option value="ns-11">Not sure</option>
+                    <option value="sla-11">Slightly agree</option>
+                    <option value="sta-11">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="food-sub-12">
+                <label for="food-field-12">Do you drink 6-8 cups of water?</label>
+                <select name="food-field-12" id="food-field-12">
+                    <option value="std-12">Strongly disagree</option>
+                    <option value="sld-12">Slightly disagree</option>
+                    <option value="ns-12">Not sure</option>
+                    <option value="sla-12">Slightly agree</option>
+                    <option value="sta-12">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="food-sub-13">
+                <label for="food-field-13">Do you get enough supplements (multivitamins)?</label>
+                <select name="food-field-13" id="food-field-13">
+                    <option value="std-13">Strongly disagree</option>
+                    <option value="sld-13">Slightly disagree</option>
+                    <option value="ns-13">Not sure</option>
+                    <option value="sla-13">Slightly agree</option>
+                    <option value="sta-13">Strongly agree</option>
+                </select>
+            </div><br>
+            <div id="food-sub-14">
+                <label for="food-field-14">Do you have any food allergies? Please name them?</label>
+                <input type="text" name="food-field-14" id="food-field-14" required>
+            </div><br>
+
+
+            <div class="form-example" id="peer">
+               <div id="peer-threshold-question">
+                   <label for="peer-threshold">On a scale of 1-10, how would you rate your relationships with fellow peers, classmates, and friends?</label>
+                   <input type="number" min="1" max="10" name="peer-threshold" id="peer-threshold" required>
+               </div><br>
+               <div id="peer-sub-1">
+                   <label for="peer-field-1">Do you get along well with your peers?</label>
+                   <select name="peer-field-1" id="peer-field-1">
+                       <option value="std-1">Strongly disagree</option>
+                       <option value="sld-1">Slightly disagree</option>
+                       <option value="ns-1">Not sure</option>
+                       <option value="sla-1">Slightly agree</option>
+                       <option value="sta-1">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-2">
+                   <label for="peer-field-2">Do you respect your peers?</label>
+                   <select name="peer-field-2" id="peer-field-2">
+                       <option value="std-2">Strongly disagree</option>
+                       <option value="sld-2">Slightly disagree</option>
+                       <option value="ns-2">Not sure</option>
+                       <option value="sla-2">Slightly agree</option>
+                       <option value="sta-2">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-3">
+                   <label for="peer-field-3">Do you feel like you are respected by your peers?</label>
+                   <select name="peer-field-3" id="peer-field-3">
+                       <option value="std-3">Strongly disagree</option>
+                       <option value="sld-3">Slightly disagree</option>
+                       <option value="ns-3">Not sure</option>
+                       <option value="sla-3">Slightly agree</option>
+                       <option value="sta-3">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-4">
+                   <label for="peer-field-4">Do you ever argue or get upset with peers?</label>
+                   <select name="peer-field-4" id="peer-field-4">
+                       <option value="std-4">Strongly disagree</option>
+                       <option value="sld-4">Slightly disagree</option>
+                       <option value="ns-4">Not sure</option>
+                       <option value="sla-4">Slightly agree</option>
+                       <option value="sta-4">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-5">
+                   <label for="peer-field-5">Do you have conversations with peers?</label>
+                   <select name="peer-field-5" id="peer-field-5">
+                       <option value="std-5">Strongly disagree</option>
+                       <option value="sld-5">Slightly disagree</option>
+                       <option value="ns-5">Not sure</option>
+                       <option value="sla-5">Slightly agree</option>
+                       <option value="sta-5">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-6">
+                   <label for="peer-field-6">Are you able to make new friends easily?</label>
+                   <select name="peer-field-6" id="peer-field-6">
+                       <option value="std-6">Strongly disagree</option>
+                       <option value="sld-6">Slightly disagree</option>
+                       <option value="ns-6">Not sure</option>
+                       <option value="sla-6">Slightly agree</option>
+                       <option value="sta-6">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-7">
+                   <label for="peer-field-7">Do you enjoy meeting new people?</label>
+                   <select name="peer-field-7" id="peer-field-7">
+                       <option value="std-7">Strongly disagree</option>
+                       <option value="sld-7">Slightly disagree</option>
+                       <option value="ns-7">Not sure</option>
+                       <option value="sla-7">Slightly agree</option>
+                       <option value="sta-7">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-8">
+                   <label for="peer-field-8">How long have you known your friends?</label>
+                   <select name="peer-field-8" id="peer-field-8">
+                       <option value="jmt-8">Just met them</option>
+                       <option value="ntl-8">Not too long</option>
+                       <option value="slt-8">Somewhat of a long time</option>
+                       <option value="vlt-8">Very long time</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-9">
+                   <label for="peer-field-9">Do you like making new friends?</label>
+                   <select name="peer-field-9" id="peer-field-9">
+                       <option value="std-9">Strongly disagree</option>
+                       <option value="sld-9">Slightly disagree</option>
+                       <option value="ns-9">Not sure</option>
+                       <option value="sla-9">Slightly agree</option>
+                       <option value="sta-9">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-10">
+                   <label for="peer-field-10">Have your friends changed recently?</label>
+                   <select name="peer-field-10" id="peer-field-10">
+                       <option value="std-10">Strongly disagree</option>
+                       <option value="sld-10">Slightly disagree</option>
+                       <option value="ns-10">Not sure</option>
+                       <option value="sla-10">Slightly agree</option>
+                       <option value="sta-10">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-11">
+                   <label for="peer-field-11">Do you have a group of good friends?</label>
+                   <select name="peer-field-11" id="peer-field-11">
+                       <option value="std-11">Strongly disagree</option>
+                       <option value="sld-11">Slightly disagree</option>
+                       <option value="ns-11">Not sure</option>
+                       <option value="sla-11">Slightly agree</option>
+                       <option value="sta-11">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-12">
+                   <label for="food-field-12">Do you spend time with friends?</label>
+                   <select name="peer-field-12" id="peer-field-12">
+                       <option value="std-12">Strongly disagree</option>
+                       <option value="sld-12">Slightly disagree</option>
+                       <option value="ns-12">Not sure</option>
+                       <option value="sla-12">Slightly agree</option>
+                       <option value="sta-12">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-13">
+                   <label for="peer-field-13">Do you like your friends?</label>
+                   <select name="peer-field-13" id="peer-field-13">
+                       <option value="std-13">Strongly disagree</option>
+                       <option value="sld-13">Slightly disagree</option>
+                       <option value="ns-13">Not sure</option>
+                       <option value="sla-13">Slightly agree</option>
+                       <option value="sta-13">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-14">
+                   <label for="peer-field-14">Do you do activities with friends?</label>
+                   <select name="peer-field-14" id="peer-field-14">
+                       <option value="std-14">Strongly disagree</option>
+                       <option value="sld-14">Slightly disagree</option>
+                       <option value="ns-14">Not sure</option>
+                       <option value="sla-14">Slightly agree</option>
+                       <option value="sta-14">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-15">
+                   <label for="peer-field-15">Do you meet with friends outside of school?</label>
+                   <select name="peer-field-15" id="peer-field-15">
+                       <option value="std-15">Strongly disagree</option>
+                       <option value="sld-15">Slightly disagree</option>
+                       <option value="ns-15">Not sure</option>
+                       <option value="sla-15">Slightly agree</option>
+                       <option value="sta-15">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-16">
+                   <label for="peer-field-16">Do you enjoy spending time with your classmates?</label>
+                   <select name="peer-field-16" id="peer-field-16">
+                       <option value="std-16">Strongly disagree</option>
+                       <option value="sld-16">Slightly disagree</option>
+                       <option value="ns-16">Not sure</option>
+                       <option value="sla-16">Slightly agree</option>
+                       <option value="sta-16">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-17">
+                   <label for="peer-field-17">How do you feel when with classmates?</label>
+                   <select name="peer-field-17" id="peer-field-17">
+                       <option va
+
+                               lue="std-17">Strongly disagree</option>
+                       <option value="sld-17">Slightly disagree</option>
+                       <option value="ns-17">Not sure</option>
+                       <option value="sla-17">Slightly agree</option>
+                       <option value="sta-17">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-18">
+                   <label for="peer-field-18">Do you look forward to interacting with others at school?</label>
+                   <select name="peer-field-18" id="peer-field-18">
+                       <option value="std-18">Strongly disagree</option>
+                       <option value="sld-18">Slightly disagree</option>
+                       <option value="ns-18">Not sure</option>
+                       <option value="sla-18">Slightly agree</option>
+                       <option value="sta-18">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-19">
+                   <label for="peer-field-19">Are you happy when talking with peers?</label>
+                   <select name="peer-field-19" id="peer-field-19">
+                       <option value="std-19">Strongly disagree</option>
+                       <option value="sld-19">Slightly disagree</option>
+                       <option value="ns-19">Not sure</option>
+                       <option value="sla-19">Slightly agree</option>
+                       <option value="sta-19">Strongly agree</option>
+                   </select>
+               </div><br>
+               <div id="peer-sub-20">
+                   <label for="peer-field-20">How often do you interact with your peers every week?</label>
+                   <select name="peer-field-20" id="peer-field-20">
+                       <option value="r-20">Rarely</option>
+                       <option value="nto-20">Not too often</option>
+                       <option value="so-20">Somewhat often</option>
+                       <option value="vo-20">Very often</option>
+                   </select>
+               </div><br>
+
+
+               <div class="form-example" id="mental">
+                <div id="mental-threshold-question">
+                    <label for="mental-threshold">On a scale of 1-10, How would you rate your mental and emotional well-being?</label>
+                    <input type="number" min="1" max="10" name="mental-threshold" id="mental-threshold" required>
+                </div><br>
+                <div id="mental-sub-1">
+                    <label for="mental-field-1">How do you feel your level of happiness is?</label>
+                    <select name="mental-field-1" id="mental-field-1">
+                        <option value="rh-1">Rarely high</option>
+                        <option value="nth-1">Not too high</option>
+                        <option value="sh-1">Somewhat high</option>
+                        <option value="vh-1">Very high</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-2">
+                    <label for="mental-field-2">Overall, do you feel happy?</label>
+                    <select name="mental-field-2" id="mental-field-2">
+                        <option value="std-2">Strongly disagree</option>
+                        <option value="sld-2">Slightly disagree</option>
+                        <option value="ns-2">Not sure</option>
+                        <option value="sla-2">Slightly agree</option>
+                        <option value="sta-2">Strongly agree</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-3">
+                    <label for="mental-field-3">Have you felt depressed recently?</label>
+                    <select name="mental-field-3" id="mental-field-3">
+                        <option value="std-3">Strongly disagree</option>
+                        <option value="sld-3">Slightly disagree</option>
+                        <option value="ns-3">Not sure</option>
+                        <option value="sla-3">Slightly agree</option>
+                        <option value="sta-3">Strongly agree</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-4">
+                    <label for="mental-field-4">How often do you feel low or down?</label>
+                    <select name="mental-field-4" id="mental-field-4">
+                        <option value="r-4">Rarely</option>
+                        <option value="nto-4">Not too often</option>
+                        <option value="so-4">Somewhat often</option>
+                        <option value="vo-4">Very often</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-5">
+                    <label for="mental-field-5">Would your friends describe you as upbeat and positive?</label>
+                    <select name="mental-field-5" id="mental-field-5">
+                        <option value="std-5">Strongly disagree</option>
+                        <option value="sld-5">Slightly disagree</option>
+                        <option value="ns-5">Not sure</option>
+                        <option value="sla-5">Slightly agree</option>
+                        <option value="sta-5">Strongly agree</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-6">
+                    <label for="mental-field-6">How has your mental state been?</label>
+                    <select name="mental-field-6" id="mental-field-6">
+                        <option value="rh-1">Rarely good</option>
+                        <option value="nth-1">Not too good</option>
+                        <option value="sh-1">Somewhat good</option>
+                        <option value="vh-1">Very good</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-7">
+                    <label for="mental-field-7">Have you felt anxious recently?</label>
+                    <select name="mental-field-7" id="mental-field-7">
+                        <option value="std-7">Strongly disagree</option>
+                        <option value="sld-7">Slightly disagree</option>
+                        <option value="ns-7">Not sure</option>
+                        <option value="sla-7">Slightly agree</option>
+                        <option value="sta-7">Strongly agree</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-8">
+                    <label for="mental-field-8">Have you been stressed recently?</label>
+                    <select name="mental-field-8" id="mental-field-8">
+                        <option value="jmt-8">Just met them</option>
+                        <option value="ntl-8">Not too long</option>
+                        <option value="slt-8">Somewhat of a long time</option>
+                        <option value="vlt-8">Very long time</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-9">
+                    <label for="mental-field-9">Have you been calm for the majority of the time recently?</label>
+                    <select name="mental-field-9" id="mental-field-9">
+                        <option value="std-9">St
+
+                            rongly disagree</option>
+                        <option value="sld-9">Slightly disagree</option>
+                        <option value="ns-9">Not sure</option>
+                        <option value="sla-9">Slightly agree</option>
+                        <option value="sta-9">Strongly agree</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-10">
+                    <label for="mental-field-10">Have you felt panicked recently?</label>
+                    <select name="mental-field-10" id="mental-field-10">
+                        <option value="std-10">Strongly disagree</option>
+                        <option value="sld-10">Slightly disagree</option>
+                        <option value="ns-10">Not sure</option>
+                        <option value="sla-10">Slightly agree</option>
+                        <option value="sta-10">Strongly agree</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-11">
+                    <label for="mental-field-11">Has your mental state ever negatively impacted your day to day activities?</label>
+                    <select name="mental-field-11" id="mental-field-11">
+                        <option value="std-11">Strongly disagree</option>
+                        <option value="sld-11">Slightly disagree</option>
+                        <option value="ns-11">Not sure</option>
+                        <option value="sla-11">Slightly agree</option>
+                        <option value="sta-11">Strongly agree</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-12">
+                    <label for="mental-field-12">Has feeling down ever prevented you from getting work done?</label>
+                    <select name="mental-field-12" id="mental-field-12">
+                        <option value="std-12">Strongly disagree</option>
+                        <option value="sld-12">Slightly disagree</option>
+                        <option value="ns-12">Not sure</option>
+                        <option value="sla-12">Slightly agree</option>
+                        <option value="sta-12">Strongly agree</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-13">
+                    <label for="mental-field-13">Have your feelings and emotions ever hurt your relationships?</label>
+                    <select name="mental-field-13" id="mental-field-13">
+                        <option value="std-13">Strongly disagree</option>
+                        <option value="sld-13">Slightly disagree</option>
+                        <option value="ns-13">Not sure</option>
+                        <option value="sla-13">Slightly agree</option>
+                        <option value="sta-13">Strongly agree</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-14">
+                    <label for="mental-field-14">Do you feel energetic and positive overall?</label>
+                    <select name="mental-field-14" id="mental-field-14">
+                        <option value="std-14">Strongly disagree</option>
+                        <option value="sld-14">Slightly disagree</option>
+                        <option value="ns-14">Not sure</option>
+                        <option value="sla-14">Slightly agree</option>
+                        <option value="sta-14">Strongly agree</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-15">
+                    <label for="mental-field-15">Have your friends ever said something seemed wrong in terms of the way you were acting?</label>
+                    <select name="mental-field-15" id="mental-field-15">
+                        <option value="std-15">Strongly disagree</option>
+                        <option value="sld-15">Slightly disagree</option>
+                        <option value="ns-15">Not sure</option>
+                        <option value="sla-15">Slightly agree</option>
+                        <option value="sta-15">Strongly agree</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-16">
+                    <label for="mental-field-16">How do you deal with mental health trouble?</label>
+                    <input type="text" name="mental-field-16" id="mental-field-16" required>
+                </div><br>
+                <div id="mental-sub-17">
+                    <label for="mental-field-17">Do you have someone who you can always talk to about what is troubling you?</label>
+                    <select name="mental-field-17" id="mental-field-17">
+                        <option value="std-17">Strongly disagree</option>
+                        <option value="sld-17">Slightly disagree</option>
+                        <option value="ns-17">Not sure</option>
+                        <option value="sla-17">Slightly agree</option>
+                        <option value="sta-17">Strongly agree</option>
+                    </select>
+                </div><
+                <div id="mental-sub-18">
+                    <label for="mental-field-18">Do you ever feel alone in dealing with your problems?</label>
+                    <select name="mental-field-18" id="mental-field-18">
+                        <option value="std-18">Strongly disagree</option>
+                        <option value="sld-18">Slightly disagree</option>
+                        <option value="ns-18">Not sure</option>
+                        <option value="sla-18">Slightly agree</option>
+                        <option value="sta-18">Strongly agree</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-19">
+                    <label for="mental-field-19">Do you know where to find mental health resources?</label>
+                    <select name="mental-field-19" id="mental-field-19">
+                        <option value="std-19">Strongly disagree</option>
+                        <option value="sld-19">Slightly disagree</option>
+                        <option value="ns-19">Not sure</option>
+                        <option value="sla-19">Slightly agree</option>
+                        <option value="sta-19">Strongly agree</option>
+                    </select>
+                </div><br>
+                <div id="mental-sub-20">
+                    <label for="mental-field-20">Do you ever feel overwhelmed?</label>
+                    <select name="mental-field-20" id="mental-field-20">
+                        <option value="std-20">Strongly disagree</option>
+                        <option value="sld-20">Slightly disagree</option>
+                        <option value="ns-20">Not sure</option>
+                        <option value="sla-20">Slightly agree</option>
+                        <option value="sta-20">Strongly agree</option>
+                    </select>
+                </div><br>
+
+
+               <div class="form-example" id="physical">
+                   <div id="threshold-question">
+                       <label for="physical-threshold">On a scale of 1-10, how would you rate your physical health?</label>
+                       <input type="number" min="1" max="10" name="physical-threshold" id="physical-threshold" required>
+                   </div><br>
+                   <div id="physical-sub-1">
+                       <label for="physical-field-1">Do you get enough physical activity?</label>
+                       <select name="physical-field-1" id="physical-field-1">
+                           <option value="std-1">Strongly disagree</option>
+                           <option value="sld-1">Slightly disagree</option>
+                           <option value="ns-1">Not sure</option>
+                           <option value="sla-1">Slightly agree</option>
+                           <option value="sta-1">Strongly agree</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-2">
+                       <label for="physical-field-2">How much physical activity do you get per day?</label>
+                       <select name="physical-field-2" id="physical-field-2">
+                           <option value="lt-2">less than 1 hour</option>
+                           <option value="one-2">1-2 hours</option>
+                           <option value="two-2">2-3 hours</option>
+                           <option value="three-2">3+ hours</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-3">
+                       <label for="physical-field-3">Do you play sports?</label>
+                       <select name="physical-field-3" id="physical-field-3">
+                           <option value="y-3">yes</option>
+                           <option value="n-3">no</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-4">
+                       <label for="physical-field-4">Would you consider yourself athletic?</label>
+                       <select name="physical-field-4" id="physical-field-4">
+                           <option value="std-4">Strongly disagree</option>
+                           <option value="sld-4">Slightly disagree</option>
+                           <option value="ns-4">Not sure</option>
+                           <option value="sla-4">Slightly agree</option>
+                           <option value="sta-4">Strongly agree</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-5">
+                       <label for="physical-field-5">Do you feel good about your health and body?</label>
+                       <select name="physical-field-5" id="physical-field-5">
+                           <option value="std-5">Strongly disagree</option>
+                           <option value="sld-5">Slightly disagree</option>
+                           <option value="ns-5">Not sure</option>
+                           <option value="sla-5">Slightly agree</option>
+                           <option value="sta-5">Strongly agree</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-6">
+                       <label for="physical-field-6">Do you follow a healthy lifestyle?</label>
+                       <select name="physical-field-6" id="physical-field-6">
+                           <option value="std-6">Strongly disagree</option>
+                           <option value="sld-6">Slightly disagree</option>
+                           <option value="ns-6">Not sure</option>
+                           <option value="sla-6">Slightly agree</option>
+                           <option value="sta-6">Strongly agree</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-7">
+                       <label for="physical-field-7">How much sleep do you get per night?</label>
+                       <select name="physical-field-7" id="physical-field-7">
+                           <option value="lt-7">less than 6 hours</option>
+                           <option value="six-7">6-7 hours</option>
+                           <option value="seven-7">7-8 hours</option>
+                           <option value="eight-7">8+ hours</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-8">
+                       <label for="physical-field-8">Do you eat and drink healthy foods?</label>
+                       <select name="physical-field-8" id="physical-field-8">
+                           <option value="std-8">Strongly disagree</option>
+                           <option value="sld-8">Slightly disagree</option>
+                           <option value="ns-8">Not sure</option>
+                           <option value="sla-8">Slightly agree</option>
+                           <option value="sta-8">Strongly agree</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-9">
+                       <label for="physical-field-9">Do you have enough time to devote to your health?</label>
+                       <select name="physical-field-9" id="physical-field-9">
+                           <option value="std-9">Strongly disagree</option>
+                           <option value="sld-9">Slightly disagree</option>
+                           <option value="ns-9">Not sure</option>
+                           <option value="sla-9">Slightly agree</option>
+                           <option value="sta-9">Strongly agree</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-10">
+                       <label for="physical-field-10">Would you consider yourself healthy?</label>
+                       <select name="physical-field-10" id="physical-field-10">
+                           <option value="std-10">Strongly disagree</option>
+                           <option value="sld-10">Slightly disagree</option>
+                           <option value="ns-10">Not sure</option>
+                           <option value="sla-10">Slightly agree</option>
+                           <option value="sta-10">Strongly agree</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-11">
+                       <label for="physical-field-11">Do you avoid things bad for your health?</label>
+                       <select name="physical-field-11" id="physical-field-11">
+                           <option value="std-11">Strongly disagree</option>
+                           <option value="sld-11">Slightly disagree</option>
+                           <option value="ns-11">Not sure</option>
+                           <option value="sla-11">Slightly agree</option>
+                           <option value="sta-11">Strongly agree</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-12">
+                       <label for="physical-field-12">Do you drink alcohol?</label>
+                       <select name="physical-field-12" id="physical-field-12">
+                           <option value="y-12">Yes</option>
+                           <option value="n-12">No</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-13">
+                       <label for="physical-field-13">Do you smoke?</label>
+                       <select name="physical-field-13" id="physical-field-13">
+                           <option value="y-13">Yes</option>
+                           <option value="n-13">No</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-14">
+                       <label for="physical-field-14">Do you eat junk food often?</label>
+                       <select name="physical-field-14" id="physical-field-14">
+                           <option value="y-14">Yes</option>
+                           <option value="n-14">No</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-15">
+                       <label for="physical-field-15">Do you know how to make healthy choices?</label>
+                       <select name="physical-field-15" id="physical-field-15">
+                           <option value="std-15">Strongly disagree</option>
+                           <option value="sld-15">Slightly disagree</option>
+                           <option value="ns-15">Not sure</option>
+                           <option value="sla-15">Slightly agree</option>
+                           <option value="sta-15">Strongly agree</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-16">
+                       <label for="physical-field-16">Do you have enough resources to help your physical health?</label>
+                       <select name="physical-field-16" id="physical-field-16">
+                           <option value="std-16">Strongly disagree</option>
+                           <option value="sld-16">Slightly disagree</option>
+                           <option value="ns-16">Not sure</option>
+                           <option value="sla-16">Slightly agree</option>
+                           <option value="sta-16">Strongly agree</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-17">
+                       <label for="physical-field-17">Are there sports facilities accessible to you?</label>
+                       <select name="physical-field-17" id="physical-field-17">
+                           <option value="y-17">Yes</option>
+                           <option value="n-17">No</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-18">
+                       <label for="physical-field-18">Is healthy food available to you?</label>
+                       <select name="physical-field-18" id="physical-field-18">
+                           <option value="y-18">Yes</option>
+                           <option value="n-18">No</option>
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-19">
+                       <label for="physical-field-19">Do you have someone to talk to about your physical health?</label>
+                       <select name="physical-field-19" id="physical-field-19">
+                           <option value="std-19">Strongly disagree</option>
+                           <option value="sld-19">Slightly disagree</option>
+                           <option value="ns-19">Not sure</option>
+                           <option value="sla-19">Slightly agree</option>
+                           <option value="sta-19">Strongly agree</option>
+
+                       </select>
+                   </div><br>
+                   <div id="physical-sub-20">
+                       <label for="physical-field-20">Are you financially able to make healthy choices?</label>
+                       <select name="physical-field-20" id="physical-field-20">
+                           <option value="std-20">Strongly disagree</option>
+                           <option value="sld-20">Slightly disagree</option>
+                           <option value="ns-20">Not sure</option>
+                           <option value="sla-20">Slightly agree</option>
+                           <option value="sta-20">Strongly agree</option>
+                       </select>
+                   </div><br>
+
+
+                   <div class="form-example" id="net-safety">
+                       <div id="net-threshold-question">
+                           <label for="net-threshold">Do you have access to internet at home?</label>
+                           <select name="net-threshold" id="net-threshold">
+                               <option value="y-t">yes</option>
+                               <option value="n-t">no</option>
+                           </select>
+                       </div><br>
+                       <div id="net-sub-1">
+                           <label for="net-field-1">How often do you use the internet?</label>
+                           <select name="net-field-1" id="net-field-1">
+                               <option disabled selected>Select an option</option>
+                               <option value="n-1">Never</option>
+                               <option value="r-1">Rarely</option>
+                               <option value="nto-1">Not too often</option>
+                               <option value="so-1">Somewhat often</option>
+                               <option value="vo-1">Very often</option>
+                           </select>
+                       </div><br>
+                       <div id="net-sub-2">
+                           <label for="net-field-2">How many members in your household use the internet at least once a day?</label>
+                           <input type="number" min="0" max="10" name="net-field-2" id="net-field-2" required>
+                       </div><br>
+                       <div id="net-sub-3">
+                           <label for="net-field-3">How long do your internet sessions typically last?</label>
+                           <select name="net-field-3" id="net-field-3">
+                               <option disabled selected>Select an option</option>
+                               <option value="iduti-3">I don't use the inernet</option>
+                               <option value="afm-3">A few minutes</option>
+                               <option value="aah-3">About an hour</option>
+                               <option value="sh-3">Several hours</option>
+                           </select>
+                       </div><br>
+                       <div id="net-sub-4">
+                           <label for="net-field-4">If you don’t have access to internet at home, where do you typically go to gain access?</label>
+                           <input type="text" name="net-field-4" id="net-field-4" required>
+                       </div><br>
+                       <div id="net-sub-5">
+                           <label for="net-field-5">On a scale from 1-10, how would you rate the quality of your internet usage at home?</label>
+                           <input type="number" min="1" max="10" name="net-field-5" id="net-field-5" required>
+                       </div><br>
+                       <div id="net-sub-6">
+                           <label for="net-field-6">How many devices have access to the internet in your household?</label>
+                           <input type="number" min="0" max="10" name="net-field-6" id="net-field-6" required>
+                       </div><br>
+                       <div id="net-sub-7">
+                           <label for="net-field-7">Do you own a cellphone? If so, is it a smartphone?</label>
+                           <select name="net-field-7" id="net-field-7">
+                               <option disabled selected>Select an option</option>
+                               <option value="m-6">No, N/A</option>
+                               <option value="f-6">Yes, No</option>
+                               <option value="s-6">Yes, Yes</option>
+                           </select>
+                       </div><br>
+                       <div id="net-sub-8">
+                           <label for="net-field-8">Are you currently on a cellular data contract or family plan?</label>
+                           <select name="net-field-8" id="net-field-8">
+                               <option disabled selected>Select an option</option>
+                               <option value="y-8">Yes</option>
+                               <option value="n-8">No</option>
+                           </select>
+                       </div><br>
+                       <div id="net-sub-9">
+                           <label for="net-field-9">Do your parents ever regulate your internet usage?</label>
+                           <select name="net-field-9" id="net-field-9">
+                               <option disabled selected>Select an option</option>
+                               <option value="n-9">Never</option>
+                               <option value="r-9">Rarely</option>
+                               <option value="ns-9">Not sure</option>
+                               <option value="s-9">Sometimes</option>
+                               <option value="att-9">All the time</option>
+                           </select>
+                       </div><br>
+                       <div id="net-sub-10">
+                           <label for="net-field-10">Do your parents often limit the amount of time you can spend on the internet?</label>
+                           <select name="net-field-10" id="net-field-10">
+                               <option disabled selected>Select an option</option>
+                               <option value="n-10">Never</option>
+                               <option value="r-10">Rarely</option>
+                               <option value="ns-10">Not sure</option>
+                               <option value="s-10">Sometimes</option>
+                               <option value="att-10">All the time</option>
+                           </select>
+                       </div><br>
+                       <div id="net-sub-11">
+                           <label for="net-field-11">Do your parents ever ask to check or access your browsing history?</label>
+                           <select name="net-field-11" id="net-field-11">
+                               <option disabled selected>Select an option</option>
+                               <option value="n-11">Never</option>
+                               <option value="r-11">Rarely</option>
+                               <option value="ns-11">Not sure</option>
+                               <option value="s-11">Sometimes</option>
+                               <option value="att-11">All the time</option>
+                           </select>
+                       </div><br>
+                       <div id="net-sub-12">
+                           <label for="net-field-12">Have your parents ever placed any kind of restrictions to the type of content you are allowed to access on the internet?</label>
+                           <select name="net-field-12" id="net-field-12">
+                               <option disabled selected>Select an option</option>
+                               <option value="n-12">Never</option>
+                               <option value="oot-12">Once or twice</option>
+                               <option value="ns-12">Not sure</option>
+                               <option value="st-12">Several times</option>
+                               <option value="mt-12">Many times</option>
+                           </select>
+                       </div><br>
+                   </div>
+
+
+                   <div class="form-example" id="free-time">
+                       <div id="free-threshold-question">
+                           <label for="free-threshold">On a scale from 1-10, how much freetime do you have?</label>
+                           <input type="number" min="1" max="10" name="free-threshold" id="free-threshold" required>
+                       </div><br>
+                       <div id="free-sub-1">
+                           <label for="free-field-1">Do you feel the current amount of leisure time you have is adequate?</label>
+                           <select name="free-field-1" id="free-field-1">
+                               <option disabled selected>Select an option</option>
+                               <option value="ha-1">Hardly adequate</option>
+                               <option value="sa-1">Somewhat adequate</option>
+                               <option value="va-1">Very adequate</option>
+                           </select>
+                       </div><br>
+                       <div id="free-sub-2">
+                           <label for="free-field-2">How much more freetime do you wish you had??</label>
+                           <select name="free-field-2" id="free-field-2">
+                               <option disabled selected>Select an option</option>
+                               <option value="ihe-2">I have enough</option>
+                               <option value="malm-2">Maybe a little more</option>
+                               <option value="alm-2">A lot more</option>
+                           </select>
+                       </div><br>
+                       <div id="free-sub-3">
+                           <label for="free-field-3">If you wanted to have more freetime than you currently do, how hard would this be to achieve?</label>
+                           <select name="free-field-3" id="free-field-3">
+                               <option disabled selected>Select an option</option>
+                               <option value="re-3">Relatively easy</option>
+                               <option value="sh-3">Somewhat hard</option>
+                               <option value="eh-3">Extremely hard</option>
+                               <option value="i-3">Impossible</option>
+                           </select>
+                       </div><br>
+                       <div id="free-sub-4">
+                           <label for="free-field-4">Have you ever worked a part-time job or participated in any labor-related activities?</label>
+                           <select name="free-field-4" id="free-field-4">
+                               <option disabled selected>Select an option</option>
+                               <option value="y-4">Yes</option>
+                               <option value="n-4">No</option>
+                           </select>
+                       </div><br>
+                       <div id="free-sub-5">
+                           <label for="free-field-5">How do you typically spend your free time?</label> <!-- should this be a dropdown or text field-->
+                           <input type="text" name="free-field-5" id="free-field-5" required>
+                       </div><br>
+                       <div id="free-sub-6">
+                           <label for="free-field-6">Do you own a gaming console and/or play video games to relax?</label>
+                           <select name="free-field-7" id="free-field-6">
+                               <option disabled selected>Select an option</option>
+                               <option value="y-6">Yes</option>
+                               <option value="n-6">No</option>
+                           </select>
+                       </div><br>
+                       <div id="free-sub-7">
+                           <label for="free-field-7">How often do you spend time with your family as a way to relax?</label>
+                           <select name="free-field-7" id="free-field-7">
+                               <option disabled selected>Select an option</option>
+                               <option value="n-7">Never</option>
+                               <option value="r-7">Rarely</option>
+                               <option value="nto-7">Not too often</option>
+                               <option value="so-7">Somewhat often</option>
+                               <option value="vo-7">Very often</option>
+                           </select>
+                       </div><br>
+                       <div id="free-sub-8">
+                           <label for="free-field-8">Are there many things you don’t have access to but wish you did during your free time?</label>
+                           <select name="free-field-8" id="free-field-8">
+                               <option disabled selected>Select an option</option>
+                               <option value="y-8">Yes</option>
+                               <option value="n-8">No</option>
+                           </select>
+                       </div><br>
+                       <div id="free-sub-9">
+                           <label for="free-field-9">Are you ever jealous of other children, friends, or schoolmates when it comes to leisure-related activities?</label>
+                           <select name="free-field-9" id="free-field90">
+                               <option disabled selected>Select an option</option>
+                               <option value="n-9">Never</option>
+                               <option value="r-9">Rarely</option>
+                               <option value="s-9">Sometimes</option>
+                               <option value="att-9">All the time</option>
+                           </select>
+                       </div><br>
+                       <div id="free-sub-10">
+                           <label for="free-field-10">Do your friends or other children ever make fun of you for not having something they do?</label>
+                           <select name="free-field-10" id="free-field-10">
+                               <option disabled selected>Select an option</option>
+                               <option value="n-10">Never</option>
+                               <option value="r-10">Rarely</option>
+                               <option value="s-10">Sometimes</option>
+                               <option value="att-10">All the time</option>
+                           </select>
+                       </div><br>
+                       <div id="free-sub-11">
+                           <label for="free-field-11">How often do you hang out with friends</label>
+                           <select name="free-field-11" id="free-field-11">
+                               <option disabled selected>Select an option</option>
+                               <option value="n-11">Never</option>
+                               <option value="r-11">Rarely</option>
+                               <option value="s-11">Sometimes</option>
+                               <option value="att-11">All the time</option>
+                           </select>
+                       </div><br>
+                       <div id="free-sub-12">
+                           <label for="free-field-12">Would you consider your friends to be close and trustworthy?</label>
+                           <select name="free-field-12" id="free-field-12">
+                               <option disabled selected>Select an option</option>
+                               <option value="naa-12">Not at all</option>
+                               <option value="ns-12">Not sure</option>
+                               <option value="p-12">Probably</option>
+                               <option value="imc-12">In most cases</option>
+                               <option value="wad-12">Without a doubt</option>
+                           </select>
+                       </div><br>
+                   </div>
+
+            <div class="form-example">
+            <input type="submit" value="Subscribe!">
+        </div>
+    </form>
+
+
+
+    <script>
+
+    </script>
+</body>
+</html>
