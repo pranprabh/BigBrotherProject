@@ -49,22 +49,38 @@ function nextQuestion() {
 }
 
 function submitAnswer() {
+    let thisAnswer = null;
+
+    // check for text inputs
     if (document.getElementById("textInput")) {
         input = document.getElementById("textInput").value;
         if (input != "") {
-            allAnswers[questionId] = input;
-            nextQuestion();
+            thisAnswer = input;
         }
     }
+
+    // check for radio button inputs
     for (let rb of document.querySelectorAll('input[name="formChoice"]')) {
         if (rb.checked) {
-            allAnswers[questionId] = rb.value;
-            nextQuestion();
+            thisAnswer = rb.value;
         }
+    }
+
+    // update answer if valid and move to next question
+    if (thisAnswer != null) {
+        allAnswers[questionId] = thisAnswer;
+
+        if ("threshold" in questionObj && questionObj["threshold"] && parseInt(thisAnswer) >= 8) {
+            nextQuestion();
+            while (!("threshold" in questionObj && questionObj["threshold"])) nextQuestion();
+            return;
+        }
+
+        return nextQuestion();
     }
 }
 
 function uploadAnswers() {
     db.collection("survey_responses").add(allAnswers);
-    document.getElementById("questionDiv").innerHTML = "Thank you for completing this survey! Your response is greatly appreciated."
+    document.getElementById("questionDiv").innerHTML = "Thank you for completing this survey! Your response is greatly appreciated.";
 }

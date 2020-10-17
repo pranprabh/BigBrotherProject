@@ -2,7 +2,7 @@
 // value : dictionary with a key of "question-preset" to a preset name (string) OR key of "answers" to an array of questions
 const questions = {
     "fam-threshold-question": {
-        "threshold" : true,
+        "threshold": true,
         "question": "On a scale of 1-10, how would you rate your relationship with your family/caretaker?",
         "question-preset": "NUMERIC_SCALE"
     },
