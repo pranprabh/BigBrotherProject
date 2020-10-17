@@ -129,11 +129,11 @@ const questions = {
         "question-preset": "AGREE_SCALE"
     },
     "edu-sub-9": {
-        "question": "What’s your favorite subject at school?",
+        "question": "What's your favorite subject at school?",
         "answers": ["Math", "English", "Science", "Social Studies", "Art", "World Languages"]
     },
     "edu-sub-10": {
-        "question": "How’s the overall environment of school?",
+        "question": "How's the overall environment of school?",
         "question-preset": "FUN_SCALE"
     },
     "edu-sub-11": {
@@ -181,7 +181,7 @@ const questions = {
         "question-preset": "AGREE_SCALE"
     },
     "food-sub-5": {
-        "question": "Is there food available (snacks, meals, etc) when you’re hungry?",
+        "question": "Is there food available (snacks, meals, etc) when you're hungry?",
         "question-preset": "AGREE_SCALE"
     },
     "food-sub-6": {
@@ -519,7 +519,7 @@ const questions = {
         "answers": ["None", "0-30 Minutes", "30-60 Minutes", "60+ Minutes"]
     },
     "internet-sub-3": {
-        "question": "If you don’t have access to internet at home, where do you typically go to gain access?",
+        "question": "If you don't have access to internet at home, where do you typically go to gain access?",
         "question-type": "USER_INPUT"
     },
     "internet-threshold-question-3": {
@@ -595,7 +595,7 @@ const questions = {
         "question-preset": "RARELY_SCALE"
     },
     "leisure-sub-7": {
-        "question": "Are there many things you don’t have access to but wish you did during your free time?",
+        "question": "Are there many things you don't have access to but wish you did during your free time?",
         "question-preset": "YES_NO_SCALE"
     },
     "leisure-threshold-question-4": {
