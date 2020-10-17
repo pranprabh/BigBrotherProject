@@ -79,7 +79,7 @@ function submitAnswer() {
     if (thisAnswer != null) {
         allAnswers[questionId] = thisAnswer;
 
-        if ("threshold" in questionObj && questionObj["threshold"] && parseInt(thisAnswer) >= 8) {
+        if ("threshold" in questionObj && questionObj["threshold"] && isAboveThreshold(thisAnswer)) {
             nextQuestion();
             while (!("threshold" in questionObj && questionObj["threshold"])) nextQuestion();
             return;
@@ -87,6 +87,14 @@ function submitAnswer() {
 
         return nextQuestion();
     }
+}
+
+// precondition: current question is a threshold question
+// returns: boolean
+function isAboveThreshold(thisAnswer) {
+    if (questionObj["question-preset"] == "NUMERIC_SCALE") return parseInt(thisAnswer) >= 8;
+    if (questionObj["question-preset"] == "YES_NO_SCALE") return thisAnswer == "Yes";
+    return false;
 }
 
 function uploadAnswers() {
