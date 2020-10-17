@@ -639,6 +639,12 @@ function nextQuestion() {
     if ("answers" in questionObj) answers = questionObj["answers"]
     else answers = presets[questionObj["question-preset"]]
 
+    if (answers == null) {
+        i++;
+        nextQuestion();
+        return;
+    }
+
     html = questionObj["question"];
     html += "<form>";
     answers.forEach(ans => {
