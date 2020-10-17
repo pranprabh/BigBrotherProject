@@ -10,7 +10,7 @@ var questionId;
 var questionObj;
 
 function nextQuestion() {
-    console.log(i);
+    // console.log(i);
     if (i == questionKeyArr.length) {
         uploadAnswers();
         return;
@@ -29,7 +29,7 @@ function nextQuestion() {
     if ("question-type" in questionObj) {
         questionType = questionObj["question-type"];
         if (questionType == "USER_INPUT") {
-            html += "<form>";
+            html += "<form onsubmit='return false'>";
             html += "<input type='text' id='textInput'>"
             html += "</form>";
         } else return nextQuestion();
@@ -38,14 +38,23 @@ function nextQuestion() {
         if ("answers" in questionObj) answers = questionObj["answers"]
         else answers = presets[questionObj["question-preset"]]
 
-        html += "<form>";
+        html += "<form onsubmit='return false'>";
         answers.forEach(ans => {
             html += `<input type="radio" name="formChoice" value=${ans}>${ans}</input><br>`;
         });
         html += "</form>";
     }
-    html += "<button onClick='submitAnswer()'>Next Question</button>";
+    html += "<button onClick='submitAnswer()' id='submitButton'>Next Question</button>";
     document.getElementById("questionDiv").innerHTML = html;
+    
+    if ("question-type" in questionObj && questionObj["question-type"] == "USER_INPUT") {
+        document.getElementById("textInput").addEventListener("keyup", event => {
+            if (event.keyCode === 13) {
+                document.getElementById("submitButton").click();
+            }
+        });
+    }
+    
 }
 
 function submitAnswer() {
