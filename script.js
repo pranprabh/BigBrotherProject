@@ -81,7 +81,7 @@ function submitAnswer() {
 
         if ("threshold" in questionObj && questionObj["threshold"] && isAboveThreshold(thisAnswer)) {
             nextQuestion();
-            while (!("threshold" in questionObj && questionObj["threshold"])) nextQuestion();
+            while (i < questionKeyArr.length && !("threshold" in questionObj && questionObj["threshold"])) nextQuestion();
             return;
         }
 
