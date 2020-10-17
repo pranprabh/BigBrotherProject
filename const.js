@@ -15,7 +15,7 @@ const questions = {
         "question-preset": "AGREE_SCALE"
     },
     "fam-sub-3": {
-        "question": "Would you say that your parents are easily approachable for most issues you may or have experienced?",
+        "question": "Would you say that your parents are easily approachable for most issues you may have experienced?",
         "question-preset": "AGREE_SCALE"
     },
     "fam-sub-4": {
@@ -57,6 +57,7 @@ const questions = {
 
     // community
     "com-threshold-question": {
+        "threshold" : true,
         "question": "On a scale of 1-10, how safe do you feel in your community?",
         "question-preset": "NUMERIC_SCALE"
     },
@@ -69,7 +70,7 @@ const questions = {
         "question-preset": "SAFE_SCALE"
     },
     "com-sub-3": {
-        "question": "How do you feel in areas of your community you don’t know well?",
+        "question": "How do you feel in areas of your community you don't know well?",
         "question-preset": "SAFE_SCALE"
     },
     "com-sub-4": {
@@ -91,6 +92,7 @@ const questions = {
 
     // education
     "edu-threshold-question": {
+        "threshold" : true,
         "question": "On a scale of 1-10, how would you rate your education experience?",
         "question-preset": "NUMERIC_SCALE"
     },
@@ -158,6 +160,7 @@ const questions = {
     // food
 
     "food-threshold-question": {
+        "threshold" : true,
         "question": "On a scale of 1-10, how do you feel about your food intake?",
         "question-preset": "NUMERIC_SCALE"
     },
@@ -221,6 +224,7 @@ const questions = {
     // peer
 
     "peer-threshold-question": {
+        "threshold" : true,
         "question": "On a scale of 1-10, how would you rate your relationships with fellow peers, classmates, and friends?",
         "question-preset": "NUMERIC_SCALE"
     },
@@ -314,6 +318,7 @@ const questions = {
 
     // mental health
     "mental-health-question": {
+        "threshold" : true,
         "question": "How would you rate your mental and emotional well-being from 1-10?",
         "question-preset": "NUMERIC_SCALE"
     },
@@ -405,6 +410,7 @@ const questions = {
     // physical health
 
     "physical-threshold-question": {
+        "threshold" : true,
         "question": "How would you rate your physical health on a scale of 1-10?",
         "question-preset": "NUMERIC_SCALE"
     },
@@ -496,6 +502,7 @@ const questions = {
     // internet
 
     "internet-threshold-question": {
+        "threshold" : true,
         "question": "Do you have access to internet at home",
         "question-preset": "YES_NO_SCALE"
     },
@@ -555,6 +562,7 @@ const questions = {
     // leisure
 
     "leisure-threshold-question": {
+        "threshold" : true,
         "question": "On a scale from 1-10, how much freetime do you have?",
         "question-preset": "NUMERIC_SCALE"
     },
