@@ -44,7 +44,7 @@ function nextQuestion() {
         });
         html += "</form>";
     }
-    html += "<button class='form-submit-button submit-button jf-form-buttons jsTest-submitField' onClick='submitAnswer()' id='submitButton'>Next Question</button>";
+    html += "<button onClick='submitAnswer()' id='submitButton'>Next Question</button>";
     document.getElementById("questionDiv").innerHTML = html;
     
     if ("question-type" in questionObj && questionObj["question-type"] == "USER_INPUT") {
