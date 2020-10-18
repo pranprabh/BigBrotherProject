@@ -9,6 +9,10 @@ let i = 0;
 var questionId;
 var questionObj;
 
+function goToLogin() {
+    location.href = 'login.html'
+}
+
 function nextQuestion() {
     // console.log(i);
     if (i == questionKeyArr.length) {
@@ -59,7 +63,6 @@ function nextQuestion() {
 
 function submitAnswer() {
     let thisAnswer = null;
-
     // check for text inputs
     if (document.getElementById("textInput")) {
         input = document.getElementById("textInput").value;
